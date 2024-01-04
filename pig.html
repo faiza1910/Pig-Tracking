@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig Controller App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./pig.css">
+</head>
+<body>
+    <div id="whole" class="container p-5 my-5 border"> 
+        <h2 class="p-5 bg-dark text-white text-center">Farmer Hoggett's Farm</h2>
+        <div id="pigsInv"></div>
+        <button id="addBtn" class="btn btn-dark">Add</button>
+        <form id="addPig" style="display:none">
+            <div class="form-group">
+                <label for="pigName" class="form-label">Name:</label>
+                <input type="text" id="pigName" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="pigCategory" class="form-label">Category:</label>
+                <select id="pigCategory" class="form-control">
+                    <option value=""></option>
+                    <option value="Grey">Grey</option>
+                    <option value="Chestnut">Chestnut</option>
+                    <option value="White">White</option>
+                    <option value="Black">Black</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="pigHeight" class="form-label">Height:</label>
+                <input type="number" id="pigHeight" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="pigWeight" class="form-label">Weight:</label>
+                <input type="number" id="pigWeight" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="pigPersonality" class="form-label">Personality:</label>
+                <input type="text" id="pigPersonality" class="form-control">
+            </div>
+            <div class="form-group" style="display:none" id="breedPart">
+                <label for="pigBreed" class="form-label">Breed:</label>
+                <select id="pigBreed" class="form-control">
+                    <option value=""></option>
+                    <option value="Iberian">Iberian</option>
+                    <option value="Hampshire">Hampshire</option>
+                    <option value="Wattle">Wattle</option>
+                    <option value="Tammie">Tammie</option>
+                    <option value="Visayan">Visayan</option>
+                </select>
+            </div>
+            <div class="form-group" style="display:none" id="swimming">
+                <label for="pigSwim" class="form-label">Swimming Ability:</label>
+                <input type="number" id="pigSwim" class="form-control">
+            </div>
+            <div class="form-group" style="display:none" id="lang">
+                <label for="pigLang" class="form-label">Language:</label>
+                <input type="text" id="pigLang" class="form-control">
+            </div>
+            <div class="form-group" style="display:none" id="run">
+                <label for="pigRun" class="form-label">Running Speed:</label>
+                <input type="number" id="pigRun" class="form-control">
+            </div>
+            <div class="form-group" style="display:none" id="strength">
+                <label for="pigStrength" class="form-label">Strength:</label>
+                <input type="number" id="pigStrength" class="form-control">
+            </div>
+            <button type="button" id="submitPig" class="btn btn-outline-primary mt-2">Submit</button>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.47/system.js" integrity="sha512-mkBpeD76fJnxFHGZstCL0mPCW6E3RFtUzfp5Ye8oQg2rxQNHy4BgHsbmvSizsq3fgF4PGozPI1BzGCB/h1Yq5g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        System.defaultJSExtensions=true
+        System.import("main")
+    </script>
+</body>
+</html>
